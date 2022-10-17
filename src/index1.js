@@ -1,0 +1,1 @@
+export const nameID = document.getElementById("name").innerHTML
