@@ -1,18 +1,36 @@
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
-/******/ 	var __webpack_modules__ = ([
-/* 0 */,
-/* 1 */
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "nameID": () => (/* binding */ nameID)
-/* harmony export */ });
-const nameID = document.getElementById("name").innerHTML
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index1 */ \"./src/index1.js\");\n\nvar name2Id = document.getElementById(\"name2\");\nname2Id.innerHTML = \"<div>\".concat(_index1__WEBPACK_IMPORTED_MODULE_0__.nameID, \"<div>\");\n\n//# sourceURL=webpack://webpack-basic/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/index1.js":
+/*!***********************!*\
+  !*** ./src/index1.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"nameID\": () => (/* binding */ nameID)\n/* harmony export */ });\nvar nameID = document.getElementById(\"name\").innerHTML;\n\n//# sourceURL=webpack://webpack-basic/./src/index1.js?");
 
 /***/ })
-/******/ 	]);
+
+/******/ 	});
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
@@ -68,17 +86,11 @@ const nameID = document.getElementById("name").innerHTML
 /******/ 	})();
 /******/ 	
 /************************************************************************/
-var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _index1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-
-
-const name2Id = document.getElementById("name2")
-name2Id.innerHTML = `<div>${_index1__WEBPACK_IMPORTED_MODULE_0__.nameID}<div>`
-
-})();
-
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	
 /******/ })()
 ;
