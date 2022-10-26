@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 
@@ -33,6 +34,9 @@ module.exports = {
 			},
 		],
 	},
-	// this plugin helps generate HTML file in the bundle injecting the script in it. 
-	plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
+	// this plugin helps generate HTML file in the bundle injecting the script in it.
+	plugins: [
+		new HtmlWebpackPlugin({ template: "./src/index.html" }),
+		new webpack.BannerPlugin({ banner: "THIS is my Application Banner" }),
+	],
 }
